@@ -1,0 +1,1 @@
+export { default } from 'ember-isometric-grids/components/iso-layer/component';
