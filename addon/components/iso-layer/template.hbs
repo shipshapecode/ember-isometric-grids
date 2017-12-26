@@ -1,21 +1,16 @@
 <div class="isolayer isolayer--scroll1 isolayer--shadow">
   <ul class="grid grid--effect-flip">
-    <li class="grid__item">
-      <a class="grid__link" href="https://dribbble.com/forefathers">
-        <img class="grid__img layer" src="img/canvas.png" alt="Canvas Dummy" />
-        <img class="grid__img layer" src="img/wireframe.png" alt="Wireframe Dummy" />
-        <img class="grid__img layer" src="img/Dribbble1/1.jpg" alt="01" />
-        <span class="grid__title">Forefathers</span>
-      </a>
-    </li>
-    <li class="grid__item">
-      <a class="grid__link" href="https://dribbble.com/JulienLavallee">
-        <img class="grid__img layer" src="img/canvas.png" alt="Canvas Dummy" />
-        <img class="grid__img layer" src="img/wireframe.png" alt="Wireframe Dummy" />
-        <img class="grid__img layer" src="img/Dribbble1/2_1.jpg" alt="021" />
-        <span class="grid__title">Julien Lavallee</span>
-      </a>
-    </li>
+    {{#each items as |item|}}
+      <li class="grid__item">
+        <a class="grid__link" href="{{item.link}}">
+          <img class="grid__img layer" src="img/canvas.png" alt="Canvas Dummy" />
+          <img class="grid__img layer" src="img/wireframe.png" alt="Wireframe Dummy" />
+          <img class="grid__img layer" src="{{item.img}}" alt="{{item.alt}}" />
+          <span class="grid__title">{{item.title}}</span>
+        </a>
+      </li>
+    {{/each}}
+
     <li class="grid__item">
       <a class="grid__link" href="https://dribbble.com/creativemints">
         <img class="grid__img layer" src="img/canvas.png" alt="Canvas Dummy" />
