@@ -13,6 +13,7 @@ export default Component.extend({
   mouseEnter() {
     this._expandSubItems();
   },
+  
   mouseLeave() {
     this._collapseSubItems();
   },
