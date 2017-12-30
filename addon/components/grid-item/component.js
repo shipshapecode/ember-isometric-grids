@@ -13,9 +13,11 @@ export default Component.extend({
   mouseEnter() {
     this._expandSubItems();
   },
+  
   mouseLeave() {
     this._collapseSubItems();
   },
+
   _expandSubItems() {
     scheduleOnce('afterRender', this, function() {
       const itemLink = this.element.querySelector('a');
